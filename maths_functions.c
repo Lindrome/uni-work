@@ -1,9 +1,15 @@
+#include <stdio.h>
+
 int add(int x, int y){
 	return (x+y);
 }
 
 int subtract(int x,int y){
 	return (x-y);
+}
+
+int multiply(int x,int y){
+	return (x*y);
 }
 
 int main(){
@@ -22,7 +28,7 @@ int main(){
 	switch(option){
 	case 'a'	: printf("%i\n",add(number1,number2)); break;
 	case 's'	: printf("%i\n",subtract(number1,number2)); break;
-	case 'm'	:
+	case 'm'	: printf("%i\n",multiply(number1,number2)); break;
 	case 'd'	:
 	default		: printf("You have failed to choose a valid option.");
 	}
