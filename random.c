@@ -8,9 +8,9 @@ int random(int limit){
 int main(){
 	srand(time(NULL));
 	int i,n;
-	n = random(20);
-	for (i=0;i<20;i++){
-		n = rand() % 20;
-		printf("%i\n",n);
+	n = random(10);
+	for (i=0;i<10;i++){
+		n = rand() % 10;
+		if (n%2=0) printf("%i\n",n);
 	}
 }
