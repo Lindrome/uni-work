@@ -2,6 +2,10 @@ int add(int x, int y){
 	return (x+y);
 }
 
+int subtract(int x,int y){
+	return (x-y);
+}
+
 int main(){
 	int number1, number2;
 	char option;
@@ -16,11 +20,11 @@ int main(){
 	
 	printf("Result: ");
 	switch(option){
-	case 'a'	: printf("%i",add(number1,number2)); break;
-	case 's'	:
+	case 'a'	: printf("%i\n",add(number1,number2)); break;
+	case 's'	: printf("%i\n",subtract(number1,number2)); break;
 	case 'm'	:
 	case 'd'	:
 	default		: printf("You have failed to choose a valid option.");
-		return 0;
 	}
+	return 0;
 }
